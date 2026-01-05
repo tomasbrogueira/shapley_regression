@@ -90,3 +90,7 @@ results/
 # Generated plots from tests
 tests/theory_bounds/*.png
 tests/theory_bounds/*.json
+
+
+data/
+
