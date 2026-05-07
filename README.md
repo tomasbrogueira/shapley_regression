@@ -25,7 +25,6 @@ project/
 ├── datasets/            # Data directory containing all datasets
 ├── examples/            # Example scripts demonstrating usage
 ├── paper_code/          # Code and scripts used for paper results
-├── research/            # Development and experimental scripts backup
 ├── results/             # Generated simulation and benchmark results
 ├── tests/               # Testing suite
 │   ├── complexity/      # Complexity testing
