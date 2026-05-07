@@ -22,26 +22,25 @@ project/
 │   │   ├── choquet.py   # Choquet integral implementations
 │   │   └── regression.py # ChoquisticRegression model
 │   └── __init__.py
+├── datasets/            # Data directory containing all datasets
+├── examples/            # Example scripts demonstrating usage
+├── paper_code/          # Code and scripts used for paper results
+├── research/            # Development and experimental scripts backup
+├── results/             # Generated simulation and benchmark results
+├── tests/               # Testing suite
+│   ├── complexity/      # Complexity testing
+│   ├── k_additivity/    # K-additivity testing
+│   ├── robustness/      # Robustness testing
+│   ├── theory_bounds/   # Theory bounds testing
+│   └── __init__.py
 ├── utils/               # Utility functions
 │   ├── visualization/   # Visualization utilities
-│   │   └── plotting.py  # Plotting functions for different bases
 │   ├── data_loader.py   # Data loading utilities
 │   └── __init__.py
-├── tests/               # Testing code
-│   ├── complexity/      # Complexity testing
-│   │   └── complexity.py # Complexity testing framework
-│   ├── robustness/      # Robustness testing
-│   │   └── robustness.py # Robustness testing framework
-│   ├── k_additivity/    # K-additivity analysis
-│   │   └── k_additivity.py # K-additivity analysis tools
-│   └── __init__.py
-├── examples/            # Example scripts
-│   └── __init__.py
-├── data/                # Data directory
-├── research/            # Development of the project
+├── LICENSE              # License file
+├── README.md            # This file
 ├── requirements.txt     # Project dependencies
-├── setup.py             # Package installation script
-└── README.md            # This file
+└── setup.py             # Package installation script
 ```
 
 ## Mathematical Background
@@ -94,7 +93,7 @@ python -m examples.comparison_example
 
 ## Dataset Preparation
 
-Before running the examples, you need to place your datasets in the `data/` directory. The data loader expects the following files:
+Before running the examples, you need to place your datasets in the `datasets/` directory. The data loader expects the following files:
 
 - `data_banknotes.csv`: Banknote authentication dataset
 - `transfusion.csv`: Blood Transfusion Service Center Data Set
@@ -105,7 +104,7 @@ Before running the examples, you need to place your datasets in the `data/` dire
 - `data_skin.csv`: Skin segmentation dataset
 - `pure_pairwise_interaction_dataset.csv`: Pure pairwise interaction dataset
 
-Copy these files from your original project to the `data/` directory.
+Copy these files from your original project to the `datasets/` directory.
 
 ## Usage
 
