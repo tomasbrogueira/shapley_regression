@@ -84,9 +84,6 @@ Thumbs.db
 # Research folder (not included in publication)
 research/
 
-# Generated results (can be regenerated)
-results/
-
 # Generated plots from tests
 tests/theory_bounds/*.png
 tests/theory_bounds/*.json
