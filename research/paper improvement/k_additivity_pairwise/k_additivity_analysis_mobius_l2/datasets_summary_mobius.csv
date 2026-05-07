@@ -1,2 +1,0 @@
-dataset,n_attr,best_k_accuracy,max_accuracy,best_k_noise,noise_robustness,best_k_stability,stability
-pairwise_interaction,15,3,0.7066666666666667,3,0.6913333333333334,7,0.02393930403703871
