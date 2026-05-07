@@ -1,4 +1,4 @@
-# Game-theoretic Extensions of Logistic Regression
+# Shapely Regression: Game-theoretic Extensions of Logistic Regression
 
 This repository contains the implementation of game-theoretic extensions to logistic regression, focusing on the Choquet integral. The project aims to capture non-linear interactions between parameters while maintaining interpretability and efficiency of logistic regression models.
 
