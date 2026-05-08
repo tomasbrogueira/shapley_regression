@@ -1,10 +1,31 @@
-# Shapely Regression: Game-theoretic Extensions of Logistic Regression
+# Shapley Regression: Game-theoretic Extensions of Logistic Regression
 
-This repository contains the implementation of game-theoretic extensions to logistic regression, focusing on the Choquet integral. The project aims to capture non-linear interactions between parameters while maintaining interpretability and efficiency of logistic regression models.
+This repository provides a general-purpose implementation of **Shapley Regression**, a game-theoretic extension of logistic regression based on the Choquet integral. The framework is designed to model non-linear feature interactions for various machine learning tasks while preserving the interpretability, efficiency, and statistical grounding of classical logistic regression.
+
+Additionally, this repository contains the code, experiments, and implementation details for the IJCAI-2026 paper **"Shapley Regression for Rare Disease Diagnosis Support: a case study on APDS"**.
 
 ## Project Overview
 
-This project extends traditional logistic regression by incorporating the Choquet integral. This extension allows the model to capture complex non-linear interactions between features while preserving the interpretability advantages of logistic regression.
+Traditional logistic regression assumes additive feature effects, limiting its ability to capture complex relationships between variables. This project explicitly models these feature interactions through the Choquet integral and cooperative game theory. 
+
+By replacing the standard linear predictor with a k-additive cooperative game formulation, Shapley Regression provides a powerful general tool that enables:
+- Explicit modeling of pairwise or higher-order feature interactions
+- Decomposition of predictions into individual and interaction contributions
+- Preservation of convex optimization properties
+- Controllable model complexity through the choice of k and regularization strategies
+
+### IJCAI-2026 Case Study: Rare Disease Diagnosis (APDS)
+
+While broadly applicable, the framework is notably effective for biomedical and rare disease applications. In rare diseases such as Activated PI3K Delta Syndrome (**APDS**), diagnosis often depends not on isolated phenotypes, but on combinations of interacting clinical manifestations. 
+
+In such settings, datasets are often small, imbalanced, heterogeneous, and partially incomplete. Conventional linear models may overlook important interaction patterns, while deep learning methods can suffer from limited interpretability. Shapley Regression addresses this gap by providing an interaction-aware yet interpretable modeling framework capable of supporting rare disease screening, phenotype analysis, and hypothesis generation from electronic health records.
+
+This repository includes both theoretical and practical components for studying interaction-aware learning across different settings, including:
+- Implementation of Shapley Regression models
+- Optimization procedures for learning capacities
+- Interaction analysis and visualization tools
+- Evaluation pipelines for different classification tasks
+- Experiments on phenotype-based representations for APDS diagnosis support
 
 ### Key Features
 
@@ -24,7 +45,8 @@ project/
 │   └── __init__.py
 ├── datasets/            # Data directory containing all datasets
 ├── examples/            # Example scripts demonstrating usage
-├── paper_code/          # Code and scripts used for paper results
+├── paper_code/          # Code and scripts used for IJCAI-2026 paper results
+├── paper_results/       # Results used for IJCAI-2026 paper
 ├── results/             # Generated simulation and benchmark results
 ├── tests/               # Testing suite
 │   ├── complexity/      # Complexity testing
