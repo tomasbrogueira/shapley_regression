@@ -56,8 +56,8 @@ Each representation has its own interpretability properties and is suitable for 
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/[anonymous]/Game-TheoreticChoquisticRegression.git
-cd Game-TheoreticChoquisticRegression
+git clone https://github.com/tomasbrogueira/shapley_regression.git
+cd shapley_regression
 ```
 
 2. Install the package in development mode:
@@ -76,8 +76,8 @@ If you prefer not to install the package, you can still run the scripts by addin
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/[anonymous]/Game-TheoreticChoquisticRegression.git
-cd Game-TheoreticChoquisticRegression
+git clone https://github.com/tomasbrogueira/shapley_regression.git
+cd shapley_regression
 ```
 
 2. Install required dependencies:
