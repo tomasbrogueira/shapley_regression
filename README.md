@@ -121,7 +121,7 @@ Before running the examples, you need to place your datasets in the `datasets/` 
 - `data_mammographic.data`: Mammographic mass dataset
 - `data_raisin.xlsx`: Raisin dataset
 - `data_rice.xlsx`: Rice (Commeo and Osmancik) dataset
-- `diabetes.csv`: Diabetes (PIMA) dataset
+- `diabetes.csv`: Pima Indians Diabetes dataset
 - `data_skin.csv`: Skin segmentation dataset
 - `pure_pairwise_interaction_dataset.csv`: Pure pairwise interaction dataset
 
